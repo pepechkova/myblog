@@ -1,0 +1,13 @@
+.site-footer{
+
+    border-top: 1px splid var(--color-basic-border);
+    padding-top: var(sizing-ws-base);
+
+
+}
+
+.site-footer p {
+    font-style: italic;
+    opacity: 0.7;
+    
+}
