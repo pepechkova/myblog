@@ -44,4 +44,4 @@ gulp.task("watch", function() {
 
 });
 
-gulp.task("default", gulp.series('css','watch'));
+gulp.task("default", gulp.series('jekyll', 'css','watch'));
