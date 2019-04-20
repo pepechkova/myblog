@@ -6,7 +6,9 @@ description: the first one site
 baseurl: 
 url: "" 
 twitter_username: apepechkova
-github_username:  jekyll
+github_username: pepechkova
+destination: docs
+
 
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js,package.json]
 

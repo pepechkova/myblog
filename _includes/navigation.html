@@ -1,4 +1,4 @@
-<label id="toggle-main-nav-button" for="toggle-main-nav">Menu</label>
+
 <nav class="{{ include.location }}-nav">
     <ul>
         {% for page in site.pages %}
@@ -7,13 +7,10 @@
             <a href="{{ site.baseurl }}{{ page.url }}">
                 <span class="title">{{ page.title }}</span>
                 <span class="date">{{ page.date | date_to_string }}</span>
+
             </a>
-            
-            
-           
-           
-            
-        </li>
+
+
         {% endif %}
         {% endfor %}
     </ul>
