@@ -1,21 +1,17 @@
 
-<nav class="{{ include.location }}-nav">
-    <ul>
-        {% assign sorted_pages = site.pages | sort:"order" %}
-        {% for page in sorted_pages %}
+ <nav>
+       
 
-        
-        {% if page.url != '/feed.xml' and page.url != '/' %}
-        <li>
-            <a href="{{ site.baseurl }}{{ page.url }}">
-                <span class="title">{{ page.title }}</span>
-                <span class="date">{{ page.date | date_to_string }}</span>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
 
-            </a>
+            <ul class="menu">
+                <li><a href="../about">About</a></li>
+                <li><a href="../restaurants">Restaurants</a></li>
+                <li><a href="../gallery">Gallery</a></li>
+                <li><a href="../traveltips">Traveltips</a></li>
+                <li><a href="../contacts">Contacts</a></li>
+            </ul>
+        </nav>
 
-
-        {% endif %}
-        {% endfor %}
-    </ul>
-</nav>
 
